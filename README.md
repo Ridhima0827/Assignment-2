@@ -1,9 +1,13 @@
 # Assignment-2
-1. Overview of the Game
+1. Repository Link
+
+Original game:
+https://github.com/shoonyank/game
+2. Overview of the Game
 
 The existing project is a simple terminal-based running game where a player character must avoid obstacles by jumping at the right time. The screen refreshes continuously to simulate motion. It uses basic C programming concepts such as loops, conditionals, keyboard input and rendering using text.
 
-2. Overall Game Architecture
+3. Overall Game Architecture
 
 The project uses a modular code structure, with different components placed in separate .c and .h files. This separation helps keep the core logic organized.
 
@@ -17,7 +21,7 @@ utils.c / utils.h — helper functions to clear the screen, delay the game, and 
 
 This layout follows a functional programming style, where each file handles a specific responsibility.
 
-3. Game Loop Behavior
+4. Game Loop Behavior
 
 The game follows a classic infinite loop structure:
 
@@ -48,7 +52,8 @@ Delay
 Sleep for a fixed number of milliseconds to control game speed.
 
 This loop continues until the player hits an obstacle, which stops the game.
-4. Input Handling
+
+5. Input Handling
 
 The game uses kbhit() and getch() for non-blocking keyboard input.
 This allows:
@@ -61,7 +66,7 @@ Real-time jumping
 
 This method is widely used in old-school C terminal games.
 
-5. Collision Detection Logic
+6. Collision Detection Logic
 
 Collision is detected by comparing:
 
@@ -74,16 +79,6 @@ Player vertical state (jumping or grounded)
 If both occupy the same position at the same time and the player is not jumping, a collision is registered.
 
 The collision detection is simple but effective for this type of game.
-6. Rendering Technique
-
-The game uses:
-
-system("cls") or system("clear")
-
-ASCII characters (P for player, # for obstacle)
-
-The game repaints the full screen every frame, giving the illusion of animation.
-Although simple, this technique works well for text-based environments.
 
 7. Strengths of the Existing Game
 
