@@ -8,7 +8,7 @@ https://github.com/shoonyank/game
 
 The existing project is a simple terminal-based running game where a player character must avoid obstacles by jumping at the right time. The screen refreshes continuously to simulate motion. It uses basic C programming concepts such as loops, conditionals, keyboard input and rendering using text.
 
-4. Game Loop Behavior
+3. Game Loop Behavior
 
 The game follows a classic infinite loop structure:
 
@@ -40,7 +40,7 @@ Sleep for a fixed number of milliseconds to control game speed.
 
 This loop continues until the player hits an obstacle, which stops the game.
 
-5. Input Handling
+4. Input Handling
 
 The game uses kbhit() and getch() for non-blocking keyboard input.
 This allows:
@@ -54,7 +54,7 @@ Real-time jumping
 This method is widely used in old-school C terminal games.
 
 
-7. Strengths of the Existing Game
+5. Strengths of the Existing Game
 
 ✔ Very simple and readable code — good for learning and teaching basics of C
 
@@ -66,7 +66,7 @@ This method is widely used in old-school C terminal games.
 
 ✔ Lightweight and fast — runs smoothly on any system
 
-8. Weaknesses and Limitations
+6. Weaknesses and Limitations
 
 ✘ No scoring or progression system
 
