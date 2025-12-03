@@ -3,6 +3,7 @@
 
 Original game:
 https://github.com/shoonyank/game
+
 2. Overview of the Game
 
 The existing project is a simple terminal-based running game where a player character must avoid obstacles by jumping at the right time. The screen refreshes continuously to simulate motion. It uses basic C programming concepts such as loops, conditionals, keyboard input and rendering using text.
@@ -91,10 +92,12 @@ The collision detection is simple but effective for this type of game.
 8. Weaknesses and Limitations
 
 ✘ No scoring or progression system
+
 ✘ Only one type of obstacle → gameplay becomes repetitive
+
 ✘ No difficulty scaling (speed remains constant)
+
 ✘ No restart or pause functionality
-✘ Rendering flickers because the game clears the screen every frame
+
 ✘ No sound, animations, or end-game transitions
-✘ No code comments explaining complex sections
 
